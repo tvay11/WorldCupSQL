@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html class="no-js" lang="">
 
 <head>
@@ -31,11 +31,11 @@
 
 <?php
 
-$db = new mysqli('localhost', 'carlos', 'Databases123$$$', 'WorlCupDB');
+$db = new mysqli('localhost', 'carlos', 'Databases123$$$', 'WorldCupDB');
 
 // Check for errors in the connection
 if ($db->connect_error) {
-die("Connection failed: " . $db->connect_error);
+die(" Connection failed: " . $db->connect_error);
 }
 
 if (isset($_POST['search'])) {
@@ -66,7 +66,7 @@ else {
 // Print an error if the query was unsuccessful
 echo "Error: " . $db->error;
 }
-
+?>
 
 </body>
 
